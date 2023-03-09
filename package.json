@@ -1,5 +1,5 @@
 {
-  "name": "react-phone-input-2",
+  "name": "react-phone-input-suffix",
   "version": "0.0.1",
   "description": "A react component to format phone numbers",
   "main": "lib/lib.js",
@@ -8,7 +8,7 @@
     "test": "jest",
     "start": "TARGET=dev_js NODE_ENV=development webpack-dev-server --progress",
     "start:css": "TARGET=dev_css NODE_ENV=development webpack-dev-server --progress",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && npm run build:js && npm run build:css",
+    "build": " npm run build:js && npm run build:css",
     "build:js": "TARGET=build_js NODE_ENV=production webpack -p --progress",
     "build:css": "TARGET=build_css NODE_ENV=production webpack -p --progress && rm ./main.js",
     "prepublishOnly": "npm run build",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bl00mber/react-phone-input-2.git"
+    "url": "git+https://github.com/bl00mber/react-phone-input-suffix.git"
   },
   "keywords": [
     "react",
@@ -40,15 +40,16 @@
     "README.md",
     "index.d.ts"
   ],
-  "author": "Nick Reiley <bloomber111@gmail.com> (https://github.com/bl00mber)",
+  "author": "Eugene Fezeu <eugenefezeu@gmail.com> (https://github.com/fez2000)",
   "contributors": [
-    "Raza Gill <raza.gill@outlook.com> (https://github.com/razagill)"
+    "Raza Gill <raza.gill@outlook.com> (https://github.com/razagill)",
+    "Nick Reiley <bloomber111@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bl00mber/react-phone-input-2/issues"
+    "url": "https://github.com/fez2000/react-phone-input-suffix/issues"
   },
-  "homepage": "https://github.com/bl00mber/react-phone-input-2",
+  "homepage": "https://github.com/fez2000/react-phone-input-suffix",
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$": "<rootDir>/test/__mocks__/fileMock.js",
